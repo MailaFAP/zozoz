@@ -1,9 +1,10 @@
-import Header from "./componentes/Header";
+import React from "react";
+import Rotas from "./pages/Rotas/Rotas";
 
 function App() {
     return (
         <div>
-            <Header />
+            <Rotas />
         </div>
     )
 }
