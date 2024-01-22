@@ -9,7 +9,7 @@ function Header() {
                 <span>
                     zozoz
                 </span>
-                <nav>
+                <nav className="menu">
                     <Link className='home-link' to='/home'>Home</Link>
                     <Link className='sobre-link' to='/sobre'>Sobre</Link>
                     <Link className='servicos-link' to='/servicos'>Serviços</Link>
