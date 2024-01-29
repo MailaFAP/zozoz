@@ -1,33 +1,143 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Estilo para a versão desktop */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.267);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.header {
+.logo {
+  color: black;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Estilo para a versão mobile */
+.hamburger-menu {
+  display: none; /* Oculta o menu hambúrguer por padrão */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.452);
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+/* Mostra o menu hambúrguer somente em telas menores que 768 pixels */
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar.open {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.322);
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.21);
-    font-family: 'Montserrat', sans-serif;
-}
+  }
 
-header {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header span{
-    
-}
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    flex: 2;
-}
-
-a {
-   text-decoration: none;
-   color: white; 
+  .nav-links.open a {
+    margin: 10px;
+  }
 }
