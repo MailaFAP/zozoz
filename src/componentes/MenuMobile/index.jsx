@@ -1,13 +1,14 @@
-import { IconButton, CloseButton, Box } from "@chakra-ui/react";
+import { IconButton, Box } from "@chakra-ui/react";
 import { useState } from "react";
 import Menu from "../Menu";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 function MenuMobile() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
             <IconButton colorScheme="teal" 
-            icon={isOpen ? <CloseButton /> : <CloseButton /> } 
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon /> } 
             boxSize="3rem"
             size="2rem"
             onClick={() => setIsOpen(!isOpen)} 
