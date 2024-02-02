@@ -4,7 +4,8 @@ import { Box, HStack, useMediaQuery } from "@chakra-ui/react";
 import Logo from "../Logo";
 import Menu from "../Menu";
 import MenuMobile from "../MenuMobile";
-
+import LogoMenu from "../../imagens/logo.jpeg"
+ 
 function Header() {
   const [isLargerThanMD] = useMediaQuery("(min-width: 768px)");
 
@@ -16,7 +17,7 @@ function Header() {
         p={{ base: "1rem 3rem", md: "1rem 8rem" }}
         justifyContent={"space-between"}
       >
-        <Logo size="5rem" />
+        <Logo imagem= {LogoMenu} size="5rem" />
         {isLargerThanMD ? <Menu /> : <MenuMobile />}
       </HStack>
     </Box>

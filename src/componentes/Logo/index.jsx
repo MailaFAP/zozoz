@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { Image } from "@chakra-ui/react";
-import logoMenu from "../../imagens/logo.jpeg"
 
-function Logo({ size }){
+function Logo({ size, imagem }){
     return (
         <Link to="/" display="block">
-            <Image src={logoMenu} lt="Logo zozoz" width={size} />
+            <Image src={imagem} lt="Logo zozoz" width={size} />
         </Link>
     )
 }
