@@ -1,35 +1,42 @@
 import React from "react";
 import { PhoneIcon } from "@chakra-ui/icons";
-import Instagram from "../../imagens/instagram.png"
+import Instagram from "../../imagens/insta.png"
+import "./Footer.css"
+import Logo from "../Logo";
+import LogoFooter from "../../imagens/logofooter.jpg"
 
 function Footer() {
     return (
         <div className="footer">
             <footer>
+                <div className="logoFooter">
+                    <Logo imagem={LogoFooter} size="8rem" />
+                </div>
                 <div className="contato-footer">
-                    <h1>Contato</h1>
+                    <h2>Contato</h2>
                     <PhoneIcon />
                     <h4>(11)97421-0911</h4>
                 </div>
 
                 <div className="localização-footer">
-                    <h1>Localização</h1>
-                    <h4>Rua: Bernardino de Sena , 107
-                        Casa Verde
-                        São Paulo</h4>
+                    <h2>Localização</h2>
+                    <h4>Rua: Bernardino de Sena , 107<br />
+                        Casa Verde<br />
+                        São Paulo
+                    </h4>
                 </div>
 
                 <div className="social-footer">
-                    <h1>Social</h1>
-                    <h4>
-                        Siga nosso perfil nas redes sociais
-                    </h4>
-                    <img src={Instagram} width="20px" />
+                    <h2>Social</h2>
+                    <div className="circulo">
+                        <img src={Instagram} width="15px" />
+                    </div>
+                </div>
+                <div className="devs">
+                    <hr />
+                    <p>Desenvolvido por : Amanda Araújo | Maila Ferreira | Myllena Miranda Martins</p>
                 </div>
 
-                <hr />
-
-                <p>Desenvolvido por : Amanda Araújo | Maila Ferreira | Myllena Miranda Martins</p>
             </footer>
         </div>
     )
