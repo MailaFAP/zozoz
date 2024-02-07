@@ -4,6 +4,8 @@ import Instagram from "../../imagens/insta.png"
 import "./Footer.css"
 import Logo from "../Logo";
 import LogoFooter from "../../imagens/logofooter.jpg"
+import { Link } from "react-router-dom";
+import { Box } from "@chakra-ui/layout";
 
 function Footer() {
     return (
@@ -29,7 +31,11 @@ function Footer() {
                 <div className="social-footer">
                     <h2>Social</h2>
                     <div className="circulo">
-                        <img src={Instagram} width="15px" />
+                        <Link to="https://www.instagram.com/estudio_zozoz?igsh=ZjRiYnZrdDB3YjBn" isExternal>
+                            <Box w="100px" h="100px">
+                                <img src={Instagram} width="15px" />
+                            </Box>
+                        </Link>
                     </div>
                 </div>
                 <div className="devs">
