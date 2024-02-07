@@ -1,4 +1,4 @@
-footer {
+/* footer {
     display: grid;
     grid-template-areas: "logo contato localizacao social"
         "nomes nomes nomes nomes";
@@ -56,4 +56,81 @@ p {
     background-color: #fff;
     align-items: center;
     justify-content: center;
+} */
+
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "logo logo logo logo"
+    "contato contato contato contato"
+    "localizacao localizacao localizacao localizacao"
+    "social social social social"
+    "nomes nomes nomes nomes";
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #92d8b6;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 11px;
+}
+
+p {
+  font-size: 11px;
+}
+
+.logoFooter {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-footer {
+  grid-area: contato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localização-footer {
+  grid-area: localizacao;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social-footer {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.devs {
+  grid-area: nomes;
+}
+
+.circulo {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
 }
