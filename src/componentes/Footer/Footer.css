@@ -1,59 +1,63 @@
 footer {
-    display: grid;
-    grid-template-areas: "logo contato localizacao social"
-        "nomes nomes nomes nomes";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background-color: #92D8B6;
-    color: white;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "logo logo logo logo"
+    "contato contato contato contato"
+    "localizacao localizacao localizacao localizacao"
+    "social social social social"
+    "nomes nomes nomes nomes";
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #92d8b6;
+  color: white;
+  text-align: center;
 }
 
 h2 {
-    font-size: 14px;
+  font-size: 14px;
+  margin: 0;
 }
 
 h4 {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 p {
-    font-size: 11px;
+  font-size: 11px;
+}
+
+.logoFooter,
+.contato-footer,
+.localização-footer,
+.social-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .logoFooter {
-    grid-area: logo;
+  grid-area: logo;
+  padding: 8px 0;
 }
 
-.contato-Footer {
-    grid-area: contato;
+.contato-footer {
+  grid-area: contato;
 }
 
 .localização-footer {
-    grid-area: localizacao;
+  grid-area: localizacao;
 }
 
 .social-footer {
-    grid-area: social;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  grid-area: social;
 }
 
 .devs {
-    grid-area: nomes;
-}
-
-.circulo {
-    display: flex;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
+  grid-area: nomes;
 }
