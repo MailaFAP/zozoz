@@ -1,0 +1,14 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.contate >h2, .localizacao >h2{
+    
+        font-size: 20px;
+        color: #D8B192;
+        font-weight: 600;
+    
+}
+.contate >h3, .localizacao >h3{
+    font-size: 15px;
+}
