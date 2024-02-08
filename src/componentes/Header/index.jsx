@@ -12,10 +12,12 @@ function Header() {
   return (
     <Box position={"relative"}>
       <HStack
-        bgColor="teal.200"
+        bgColor="rgb(0,0,0,0.3)"
         w="full"
         p={{ base: "1rem 3rem", md: "1rem 8rem" }}
         justifyContent={"space-between"}
+        position={"fixed"}
+        zIndex={1}
       >
         <Logo imagem= {LogoMenu} size="5rem" />
         {isLargerThanMD ? <Menu /> : <MenuMobile />}
