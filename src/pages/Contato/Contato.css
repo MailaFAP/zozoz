@@ -10,6 +10,12 @@
     
 }
 .contate >h3, .localizacao >h3{
+contato-finalizando
+    font-size: 15px;
+}
+
+.conteiner-contato{
+    background-color: #FCF8EF;
     font-size: 11px;
 }
 
