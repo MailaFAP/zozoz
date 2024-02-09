@@ -4,15 +4,65 @@
 }
 .contate >h2, .localizacao >h2{
     
-        font-size: 20px;
+        font-size: 14px;
         color: #D8B192;
         font-weight: 600;
     
 }
 .contate >h3, .localizacao >h3{
+contato-finalizando
     font-size: 15px;
 }
 
 .conteiner-contato{
     background-color: #FCF8EF;
+    font-size: 11px;
+}
+
+/* Media query para desktop */
+@media screen and (min-width: 768px) {
+    /* Ajuste da altura do contêiner Flex */
+    .contato-container {
+        height: 150vh; /* valor maior para desktop */
+    }
+
+    .contato-container .contato-loc {
+        height: 112vh;
+    }
+  
+    /* Ajuste do espaçamento entre os elementos */
+    .contato-container .flex-container {
+        gap: 20px; /* valor maior para desktop */
+    }
+  
+    /* Ajuste das larguras dos elementos */
+    .contato-container .imagem-manicure,
+    .contato-container .contate,
+    .contato-container .localizacao {
+        width: 40vw; /* valor maior para desktop */
+    }
+
+    .contato-container .img {
+        width: 25vw;
+    }
+  
+    /* Ajuste das alturas dos elementos */
+    .contato-container .contate,
+    .contato-container .localizacao {
+        height: 220px; /* valor maior para desktop */
+    }
+
+    /* Ajuste do tamanho da fonte para h2 */
+    .contato-container .contate > h2,
+    .contato-container .localizacao > h2 {
+        font-size: 24px; /* valor maior para desktop */
+        color: #D8B192;
+        font-weight: 600;
+    }
+
+    /* Ajuste do tamanho da fonte para h3 */
+    .contato-container .contate > h3,
+    .contato-container .localizacao > h3 {
+        font-size: 18px; /* valor maior para desktop */
+    }
 }
