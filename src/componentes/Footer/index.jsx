@@ -36,11 +36,6 @@ function Footer() {
 
         <div className="social-footer">
           <h2>Social</h2>
-          {/* <div className="circulo">
-                    <Link to="https://www.instagram.com/estudio_zozoz?igsh=ZjRiYnZrdDB3YjBn" isExternal>
-                        <Image src={Instagram} />
-                    </Link>
-                    </div> */}
           <HStack>
             <Link
               to="https://www.instagram.com/estudio_zozoz?igsh=ZjRiYnZrdDB3YjBn"

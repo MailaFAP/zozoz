@@ -1,63 +1,87 @@
 footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "logo logo logo logo"
-    "contato contato contato contato"
-    "localizacao localizacao localizacao localizacao"
-    "social social social social"
-    "nomes nomes nomes nomes";
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "logo logo logo logo"
+        "contato contato contato contato"
+        "localizacao localizacao localizacao localizacao"
+        "social social social social"
+        "nomes nomes nomes nomes";
 
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #92d8b6;
-  color: white;
-  text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #92d8b6;
+    color: white;
+    text-align: center;
 }
 
 h2 {
-  font-size: 14px;
-  margin: 0;
+    font-size: 14px;
+    margin: 0;
 }
 
 h4 {
-  font-size: 11px;
+    font-size: 11px;
 }
 
 p {
-  font-size: 11px;
+    font-size: 11px;
 }
 
 .logoFooter,
 .contato-footer,
 .localização-footer,
 .social-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .logoFooter {
-  grid-area: logo;
-  padding: 8px 0;
+    grid-area: logo;
+    padding: 8px 0;
 }
 
 .contato-footer {
-  grid-area: contato;
+    grid-area: contato;
 }
 
 .localização-footer {
-  grid-area: localizacao;
+    grid-area: localizacao;
 }
 
 .social-footer {
-  grid-area: social;
+    grid-area: social;
 }
 
 .devs {
-  grid-area: nomes;
+    grid-area: nomes;
 }
+
+hr{
+    margin: 0 60px 10px 60px;
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "logo contato localizacao social"
+            "logo contato localizacao social"
+            "logo contato localizacao social"
+            "nomes nomes nomes nomes";
+
+        height: 200px;
+    }
+
+    hr{
+        margin: 0 100px 10px 100px;
+    }
+    
+}
+

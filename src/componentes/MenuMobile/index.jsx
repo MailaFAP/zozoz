@@ -7,7 +7,7 @@ function MenuMobile() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-            <IconButton colorScheme="teal"
+            <IconButton colorScheme="transparent"
                 icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                 boxSize="3rem"
                 size="2rem"
@@ -16,7 +16,7 @@ function MenuMobile() {
             <Box
                 p="2rem 8rem"
                 m="0 !important"
-                bgColor="teal"
+                bgColor="#CADBCE"
                 position="absolute"
                 top="100%"
                 left="0"
