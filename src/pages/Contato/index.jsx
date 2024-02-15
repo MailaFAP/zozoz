@@ -5,24 +5,30 @@ import { AspectRatio, Box, Flex, Image, Text } from "@chakra-ui/react";
 import Manicure from "../../imagens/unha.png";
 import Follow from "../../imagens/follow.png"
 import "./Contato.css";
-import IconFollwow from "../../imagens/iconFollow.png"
+import IconFollwow from "../../imagens/social.jpg";
+import Pontilhado from "../../imagens/pontilhado01-contato.jpg";
+import P02 from "../../imagens/pontilhado02-contato.jpg";
+import Traco from "../../imagens/traço-contato.jpg";
+
 
 
 function Contato() {
     return (
         <div className="contato-container">
             <Header />
-            <Flex>
-                <Box w="100vw" m="112px 0 0 0" >
-                    <AspectRatio maxW='100vw' ratio={90 / 30} h="400px">
-                        <Image src={Follow} />
-                    </AspectRatio>
-                </Box>
-                <Box w="100px" m="112px 0 0 0" zIndex={1}>
-                    <AspectRatio maxW='100vw' ratio={90 / 30}>
-                        <Image src={IconFollwow} />
-                    </AspectRatio>
-                    <Text> Follow us</Text>
+            <Flex className="follow" justifyContent="center">
+                <Box position={"relative"} m="112px 0 0 0">
+                    <Box w="100vw" >
+                        <AspectRatio maxW='100vw' ratio={90 / 30} h="400px">
+                            <Image src={Follow} />
+                        </AspectRatio>
+                    </Box>
+                    <Box className="box-follow" w="500px" h="200px" >
+                        <Box className="box-icon">
+                            <Image src={IconFollwow} />
+                            <Text className="text"> Follow us</Text>
+                        </Box>
+                    </Box>
                 </Box>
             </Flex>
             <Flex className="contato-loc" justifyContent="center" alignItems="center" height="60vh" font-family="Montserrat', sans-serif">
@@ -51,6 +57,15 @@ function Contato() {
                     </Flex>
                 </Flex>
             </Flex>
+            <Box className="pontilhado">
+                <Image src={Pontilhado}/>
+            </Box>
+            <Box className="pontilhado02">
+                <Image src={P02}/>
+            </Box>
+            <Box className="traco">
+                <Image src={Traco}/>
+            </Box>
             <Footer />
         </div>
     );
