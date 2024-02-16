@@ -6,9 +6,9 @@ import Manicure from "../../imagens/unha.png";
 import Follow from "../../imagens/follow.png"
 import "./Contato.css";
 import IconFollwow from "../../imagens/social.jpg";
-import Pontilhado from "../../imagens/pontilhado01-contato.jpg";
-import P02 from "../../imagens/pontilhado02-contato.jpg";
-import Traco from "../../imagens/traço-contato.jpg";
+import Pontilhado from "../../imagens/pontilhado02-contato.png";
+import P02 from "../../imagens/pontilhado02-contato.png";
+import Traco from "../../imagens/traco-contato.png";
 
 
 
