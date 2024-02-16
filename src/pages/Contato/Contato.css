@@ -1,100 +1,115 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
+* {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
-.contate >h2, .localizacao >h2{
-    
-        font-size: 14px;
-        color: #D8B192;
-        font-weight: 600;
-    
+.contate > h2,
+.localizacao > h2 {
+  font-size: 14px;
+  color: #d8b192;
+  font-weight: 600;
 }
-.contate >h3, .localizacao >h3{
-    font-size: 15px;
-}
-
-.contato-conteiner{
-    background-color: #FCF8EF;
-    font-size: 11px;
+.contate > h3,
+.localizacao > h3 {
+  font-size: 15px;
 }
 
-
-.box-follow{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.288);
+.contato-conteiner {
+  background-color: #fcf8ef;
+  font-size: 11px;
 }
 
-.box-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.box-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.288);
 }
 
-.box-icon > .text{
-    font-size: 30px;
-    color: #D8B192;
-    font-weight: 600;
-    margin-top: 10px;
+.box-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.pontilhado{
-    position: absolute;
-    top: 50px;
+.box-icon > .text {
+  font-size: 30px;
+  color: #d8b192;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.pontilhado {
+  position: absolute;
+  top: 500px;
+}
+
+.traco {
+  /* transform: rotate(5deg); */
+   top: 1050px;
+}
+
+ .pontilhado02 {
+  top: 950px;
+  /* transform: rotate(-15deg); */
+}
+.pontilhado02,
+.traco {
+  position: absolute;
+  z-index: -1;
+  right: 0px;
 }
 
 /* Media query para desktop */
 @media screen and (min-width: 768px) {
-    /* Ajuste da altura do contêiner Flex */
-    .contato-container {
-        height: 150vh; /* valor maior para desktop */
-    }
+  /* Ajuste da altura do contêiner Flex */
+  .contato-container {
+    height: 150vh; /* valor maior para desktop */
+  }
 
-    .contato-container .contato-loc {
-        height: 112vh;
-    }
-  
-    /* Ajuste do espaçamento entre os elementos */
-    .contato-container .flex-container {
-        gap: 20px; /* valor maior para desktop */
-    }
-  
-    /* Ajuste das larguras dos elementos */
-    .contato-container .imagem-manicure,
-    .contato-container .contate,
-    .contato-container .localizacao {
-        width: 40vw; /* valor maior para desktop */
-    }
+  .contato-container .contato-loc {
+    height: 112vh;
+  }
 
-    .contato-container .img {
-        width: 25vw;
-    }
-  
-    /* Ajuste das alturas dos elementos */
-    .contato-container .contate,
-    .contato-container .localizacao {
-        height: 220px; /* valor maior para desktop */
-    }
+  /* Ajuste do espaçamento entre os elementos */
+  .contato-container .flex-container {
+    gap: 20px; /* valor maior para desktop */
+  }
 
-    /* Ajuste do tamanho da fonte para h2 */
-    .contato-container .contate > h2,
-    .contato-container .localizacao > h2 {
-        font-size: 24px; /* valor maior para desktop */
-        color: #D8B192;
-        font-weight: 600;
-    }
+  /* Ajuste das larguras dos elementos */
+  .contato-container .imagem-manicure,
+  .contato-container .contate,
+  .contato-container .localizacao {
+    width: 40vw; /* valor maior para desktop */
+  }
 
-    /* Ajuste do tamanho da fonte para h3 */
-    .contato-container .contate > h3,
-    .contato-container .localizacao > h3 {
-        font-size: 18px; /* valor maior para desktop */
-    }
+  .contato-container .img {
+    width: 25vw;
+  }
+
+  /* Ajuste das alturas dos elementos */
+  .contato-container .contate,
+  .contato-container .localizacao {
+    height: 220px; /* valor maior para desktop */
+  }
+
+  /* Ajuste do tamanho da fonte para h2 */
+  .contato-container .contate > h2,
+  .contato-container .localizacao > h2 {
+    font-size: 24px; /* valor maior para desktop */
+    color: #d8b192;
+    font-weight: 600;
+  }
+
+  /* Ajuste do tamanho da fonte para h3 */
+  .contato-container .contate > h3,
+  .contato-container .localizacao > h3 {
+    font-size: 18px; /* valor maior para desktop */
+  }
 }
