@@ -6,7 +6,7 @@ import Manicure from "../../imagens/unha.png";
 import Follow from "../../imagens/follow.png"
 import "./Contato.css";
 import IconFollwow from "../../imagens/social.jpg";
-import Pontilhado from "../../imagens/pontilhado02-contato.png";
+import Pontilhado from "../../imagens/pontilhado01-contato.png";
 import P02 from "../../imagens/pontilhado02-contato.png";
 import Traco from "../../imagens/traco-contato.png";
 
@@ -58,13 +58,13 @@ function Contato() {
                 </Flex>
             </Flex>
             <Box className="pontilhado">
-                <Image src={Pontilhado}/>
+                <Image src={Pontilhado} h={"400px"} />
             </Box>
             <Box className="pontilhado02">
-                <Image src={P02}/>
+                <Image src={P02} h={"400px"} />
             </Box>
             <Box className="traco">
-                <Image src={Traco}/>
+                <Image src={Traco} h={"300px"} />
             </Box>
             <Footer />
         </div>
