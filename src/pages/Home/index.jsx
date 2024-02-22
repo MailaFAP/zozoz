@@ -11,14 +11,15 @@ function Home() {
         <div className="conteiner-home">
             <Header />
             <Flex align="center" justify="space-between">
-                <Box>
-                    <Image
-                        boxSize='400px'
-                        src={Circulo}
-                        alt='logo do salão zozoz'
-                    />
-
-                    <Box position={"absolute"} top={55} left={150}>
+                <Box >
+                    <Box position={"absolute"}  top={"180px"}>
+                        <Image
+                            boxSize='400px'
+                            src={Circulo}
+                            alt='circulo'
+                        />
+                    </Box>
+                    <Box position={"absolute"} top={40} left={150}>
                         <Image
                             boxSize='300px'
                             src={LogoHome}
