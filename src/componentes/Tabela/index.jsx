@@ -19,7 +19,7 @@ function Tabela() {
             </Th>
           </Tr>
         </Thead>
-        <Tbody>
+        <Tbody color={"#767676"}>
           <Tr>
             <Td className="td-precos" textAlign={"center"}>Esmaltação</Td>
             <Td className="td-precos" textAlign={"center"}>$18,00</Td>

@@ -45,7 +45,7 @@ function Servicos() {
           Agendar
         </Button>
       </Flex>
-      <Flex justifyContent={"center"} gap={"18px"} m={"100px 0"}>
+      <Flex justifyContent={"center"} gap={"18px"} m={"100px 0"} color={"#767676"}>
         <BoxServicos
           imagem={Cutilagem}
           titulo="Cutilagem"

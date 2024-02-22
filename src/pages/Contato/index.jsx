@@ -51,6 +51,7 @@ function Contato() {
               display="flex"
               flexDirection="column"
               justifyContent="center"
+              color={"#767676"}
             >
               <h2>CONTATE NOSSO SALÃO</h2>
               <h3>
@@ -74,6 +75,7 @@ function Contato() {
               display="flex"
               flexDirection="column"
               justifyContent="center"
+              color={"#767676"}
             >
               <h2>LOCALIZAÇÃO</h2>
               <h3>
@@ -86,13 +88,13 @@ function Contato() {
         </Flex>
       </Flex>
       <Box className="pontilhado">
-        <Image src={Pontilhado} h={"400px"} />
+        <Image src={Pontilhado} h={"400px"} zIndex={-1}/>
       </Box>
       <Box className="pontilhado02">
-        <Image src={P02} h={"400px"} />
+        <Image src={P02} h={"400px"} zIndex={-1}/>
       </Box>
       <Box className="traco">
-        <Image src={Traco} h={"300px"} />
+        <Image src={Traco} h={"300px"} zIndex={-1}/>
       </Box>
       <Footer />
     </div>
