@@ -14,6 +14,7 @@ function Sobre (){
                     mb="20px"
                     ml={{ md: "200px" }}
                 >
+                    <Image src={P02} h={{base:"300px", md:"400px"}} top={{base:"80px", md:"60px"}} left={{ md:"310px"}} position={"absolute"} zIndex={"-1"}/>
                     <Image
                         name="Dani"
                         src={dani}
@@ -38,6 +39,7 @@ function Sobre (){
                        mt="13px"
                        pl={{ base: "15px", md: "45px" }}
                        pr={{ base: "15px", md: "40px" }}
+                       color={"#767676"}
                     >
                     Olá, sou a Dani, a mente criativa por trás deste espaço encantador. 
                         Estou comprometida em oferecer serviços de alta qualidade, utilizando produtos de qualidade 
