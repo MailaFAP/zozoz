@@ -2,6 +2,11 @@
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
+
+.mapa {
+  border-radius: 100px 0px 0px 100px ;
+}
+
 .contate > h2,
 .localizacao > h2 {
   font-size: 14px;
