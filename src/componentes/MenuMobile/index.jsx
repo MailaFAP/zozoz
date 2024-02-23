@@ -10,13 +10,13 @@ function MenuMobile() {
             <IconButton colorScheme="transparent"
                 icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                 boxSize="3rem"
-                size="2rem"
+                size="5rem"
                 onClick={() => setIsOpen(!isOpen)}
             />
             <Box
                 p="2rem 8rem"
                 m="0 !important"
-                bgColor="#CADBCE"
+                bgColor="#D8B192"
                 position="absolute"
                 top="100%"
                 left="0"
