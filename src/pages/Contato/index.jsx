@@ -21,7 +21,7 @@ function Contato() {
               <Image src={Follow} />
             </AspectRatio>
           </Box>
-          <Box className="box-follow" w="500px" h="200px">
+          <Box className="box-follow" w={{base:"270px", md:"500px"}} h={{base:"180px", md:"200px"}}>
             <Box className="box-icon">
               <Image src={IconFollwow} />
               <Text className="text"> Follow us</Text>
