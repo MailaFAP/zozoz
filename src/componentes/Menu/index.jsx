@@ -3,7 +3,7 @@ import NavLink from "../NavLink";
 
 function Menu( {direction} ) {
     return (
-        <Flex gap="5rem" flexDir={direction}>
+        <Flex gap="3rem" flexDir={direction} >
             <NavLink href="/home" text="Home" />
             <NavLink href="/sobre" text="Sobre" />
             <NavLink href="/servicos" text="Serviços" />

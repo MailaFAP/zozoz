@@ -6,7 +6,7 @@ function NavLink({ href, text }) {
     return (
         <Box>
             <Link to={href}>
-            <Text color="white" fontSize="15px" fontWeight="600">{text} </Text>
+            <Text color="white" fontSize="18px" fontWeight="600">{text} </Text>
             </Link>
         </Box>
     )
