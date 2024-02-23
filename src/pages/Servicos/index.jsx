@@ -16,6 +16,9 @@ import Esmaltacao from "../../imagens/esmaltacao.png";
 import Esmaltes from "../../imagens/esmaltes.png";
 import BoxServicos from "../../componentes/BoxServicos";
 import UnhasAmarelo from "../../imagens/unhas-amarelo.png";
+import salao01 from "../../imagens/imagem-salao01.jpg";
+import salao02 from "../../imagens/imagem-salao02.jpg";
+import salao03 from "../../imagens/imagem-salao03.jpg";
 
 function Servicos() {
   const [isLargerThanMD] = useMediaQuery("(min-width: 768px)");
@@ -85,8 +88,8 @@ function Servicos() {
                 justifyContent={"start"}
                 alignItems={"center"}
               >
-                <Image src={UnhasAmarelo} height={"190px"} />
-                <Image src={UnhasAmarelo} height={"190px"} />
+                <Image src={salao01} height={"190px"} />
+                <Image src={salao02} height={"190px"} />
               </Box>
               <Box
                 w={"50vw"}
@@ -95,7 +98,7 @@ function Servicos() {
                 justifyContent={"start"}
                 alignItems={"center"}
               >
-                <Image src={UnhasAmarelo} height={"190px"} />
+                <Image src={salao03} height={"190px"} />
                 <Image src={UnhasAmarelo} height={"190px"} />
               </Box>
             </Box>
@@ -110,9 +113,9 @@ function Servicos() {
             flexWrap={"wrap"}
             gap={"20px"}
           >
-            <Image src={UnhasAmarelo} height={"200px"} />
-            <Image src={UnhasAmarelo} height={"200px"} />
-            <Image src={UnhasAmarelo} height={"200px"} />
+            <Image src={salao01} height={"200px"} />
+            <Image src={salao02} height={"200px"} />
+            <Image src={salao03} height={"200px"} />
             <Image src={UnhasAmarelo} height={"200px"} />
             <Image src={UnhasAmarelo} height={"200px"} />
           </Box>
