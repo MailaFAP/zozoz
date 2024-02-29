@@ -8,9 +8,8 @@ function MenuMobile() {
     return (
         <div>
             <IconButton colorScheme="transparent"
-                icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-                boxSize="3rem"
-                size="5rem"
+                icon={isOpen ? <CloseIcon boxSize={5} /> : <HamburgerIcon boxSize={10} />}
+                boxSize={12}
                 onClick={() => setIsOpen(!isOpen)}
             />
             <Box
