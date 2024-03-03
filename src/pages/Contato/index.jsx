@@ -65,7 +65,7 @@ function Contato() {
             <Box className="img" w="40vw" m="2" >
               <AspectRatio ratio={16 / 9}>
 
-                <iframe className="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1567723392506!5m2!1sen!2sng" />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8866540139525!2d-46.646878225790026!3d-23.500591759360294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef7c4495dce11%3A0xba43c9689c77c332!2sR.%20Bernardino%20de%20Sena%2C%20107%20-%20Vila%20Ester%20(Zona%20Norte)%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002452-050!5e0!3m2!1spt-BR!2sbr!4v1709327388228!5m2!1spt-BR!2sbr" className="mapa" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 
               </AspectRatio>
             </Box>
