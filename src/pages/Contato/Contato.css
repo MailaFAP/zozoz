@@ -9,13 +9,13 @@
 
 .contate > h2,
 .localizacao > h2 {
-  font-size: 14px;
+  font-size: 24px;
   color: #d8b192;
   font-weight: 600;
 }
 .contate > h3,
 .localizacao > h3 {
-  font-size: 15px;
+  font-size: medium;
 }
 
 .contato-conteiner {
@@ -107,7 +107,7 @@
   /* Ajuste do tamanho da fonte para h2 */
   .contato-container .contate > h2,
   .contato-container .localizacao > h2 {
-    font-size: 24px; /* valor maior para desktop */
+    font-size: xx-large; /* valor maior para desktop */
     color: #d8b192;
     font-weight: 600;
   }
@@ -115,6 +115,6 @@
   /* Ajuste do tamanho da fonte para h3 */
   .contato-container .contate > h3,
   .contato-container .localizacao > h3 {
-    font-size: 18px; /* valor maior para desktop */
+    font-size: 20px; /* valor maior para desktop */
   }
 }
