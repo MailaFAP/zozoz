@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../../componentes/Header";
+import Header from "../../components/Header";
 import { Box, Image, Flex } from "@chakra-ui/react";
-import Home01 from "../../imagens/imagem-home01.png"
-import Home02 from "../../imagens/imagem-home02.png"
-import LogoHome from "../../imagens/logo-home.png"
-import Circulo from "../../imagens/imagem-home-circulo.png"
+import Home01 from "../../assets/imagem-home01.png"
+import Home02 from "../../assets/imagem-home02.png"
+import LogoHome from "../../assets/logo-home.png"
+import Circulo from "../../assets/imagem-home-circulo.png"
 
 function Home() {
     return (
