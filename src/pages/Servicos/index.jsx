@@ -68,7 +68,7 @@ function Servicos() {
 			{isLargerThanMD ? (
 				<Flex flexDir={"column"}>
 					<Text
-						fontSize={{ base: "24px", md: "40px" }}
+						fontSize={{ base: "x-large", md: "xx-large" }}
 						color={"#d8b192"}
 						fontWeight={"600"}
 						textAlign={"center"}
@@ -105,7 +105,15 @@ function Servicos() {
 					</Box>
 				</Flex>
 			) : (
-				<Flex>
+				<Flex flexDir={"column"}>
+					<Text
+						fontSize={{ base: "24px", md: "40px" }}
+						color={"#d8b192"}
+						fontWeight={"600"}
+						textAlign={"center"}
+					>
+						PRODUTOS
+					</Text>
 					<Box
 						justifyContent={"center"}
 						display={"flex"}

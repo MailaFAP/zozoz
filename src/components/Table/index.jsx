@@ -10,7 +10,7 @@ function Table_services() {
 					<Tr>
 						<Th
 							colSpan={"2"}
-							fontSize={{ base: "24px", md: "40px" }}
+							fontSize={{ base: "x-large", md: "xx-large" }}
 							color={"#d8b192"}
 							fontWeight={"600"}
 							textAlign={"center"}
