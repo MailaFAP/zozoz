@@ -1,7 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import NavLink from "../NavLink";
 
-function Menu( {direction} ) {
+function Menu({ direction }) {
     return (
         <Flex gap="3rem" flexDir={direction} >
             <NavLink href="/home" text="Home" />
