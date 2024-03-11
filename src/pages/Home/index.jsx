@@ -10,42 +10,41 @@ function Home() {
     return (
         <div className="conteiner-home">
             <Header />
-            <Flex align="center" justify="space-between">
-                <Box >
-                    <Box position={"absolute"}  top={"180px"}>
-                        <Image
-                            boxSize='400px'
-                            src={Circulo}
-                            alt='circulo'
-                        />
-                    </Box>
-                    <Box position={"absolute"} top={40} left={150}>
-                        <Image
-                            boxSize='300px'
-                            src={LogoHome}
-                            alt='logo do salão zozoz'
-                        />
-                    </Box>
+            <Flex flexDirection={{ base: "column", md: "row" }} justify="space-between">
+                <Box>
+                    <Image
+                        top={"180px"}
+                        display={{ base: "none", md: "block" }}
+                        boxSize={{ base: "0px", md: "400px" }}
+                        src={Circulo}
+                        alt='circulo'
+                    />
+                    <Image
+                        top={40}
+                        left={150}
+                        boxSize={{ base: "200px", md: "300px" }}
+                        src={LogoHome}
+                        alt='logo do salão zozoz'
+                    />
                 </Box>
-                <Flex >
-                    <Box >
-                        <Image
-                            boxSize='600px'
-                            src={Home01}
-                            alt='munher com a mão na frente do rosto'
-                        />
-                        <Box position={"absolute"} top={230} right={550}>
-                            <Image
-                                boxSize='200px'
-                                height={300}
-                                src={Home02}
-                                alt='uma mão em cima de um tecido felpudo'
-                            />
-                        </Box>
-                    </Box>
-                </Flex>
+                <Box>
+                    <Image
+                        boxSize={{ base: "500px", md: "600px" }}
+                        src={Home01}
+                        alt='mulher com a mão na frente do rosto'
+                    />
+                    <Image
+                        position={"absolute"}
+                        display={{ base: "none", md: "block" }}
+                        top={230}
+                        right={550}
+                        boxSize={{ base: "0px", md: "200px" }}
+                        height={{ base: "0px", md: "300px" }}
+                        src={Home02}
+                        alt='uma mão em cima de um tecido felpudo'
+                    />
+                </Box>
             </Flex>
-
         </div>
     )
 }
