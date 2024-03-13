@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { Box, Image, Flex } from "@chakra-ui/react";
 import Home01 from "../../assets/imagem-home01.png"
 import Home02 from "../../assets/imagem-home02.png"
-import LogoHome from "../../assets/logo-home.png"
+import LogoZO from "../../assets/logoZO.png"
 import Circulo from "../../assets/imagem-home-circulo.png"
 
 function Home() {
@@ -23,7 +23,7 @@ function Home() {
                         top={40}
                         left={150}
                         boxSize={{ base: "200px", md: "300px" }}
-                        src={LogoHome}
+                        src={LogoZO}
                         alt='logo do salão zozoz'
                     />
                 </Box>
@@ -32,6 +32,8 @@ function Home() {
                         boxSize={{ base: "500px", md: "600px" }}
                         src={Home01}
                         alt='mulher com a mão na frente do rosto'
+                        objectFit= {{base: "cover"}}
+                        filter= {{base: "blur(3px)", md: "none"}}
                     />
                     <Image
                         position={"absolute"}
