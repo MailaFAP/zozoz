@@ -27,9 +27,9 @@ function Servicos() {
 		<div>
 			<Header />
 			<Flex
-				p="112px 0 0 0"
-				flexDir={"column"}
-				gap={"50px"}
+				p={{base: "112px 0 0 0" , md:"100px 100px 90px 300px"}}
+				flexDir={{base: "column", md: "row"}}
+				gap={{base: "50px", md: "100px"}}
 				alignItems={"center"}
 			>
 				<Box>
@@ -38,8 +38,9 @@ function Servicos() {
 				<Box display={"flex"} justifyContent={"center"}>
 					<Image src={ImagemPrecos} h="270px" />
 				</Box>
-				<Shedule />
+				
 			</Flex>
+			<Shedule />
 			<Flex justifyContent={"center"} gap={"18px"} m={"100px 0"} color={"#767676"}>
 				<BoxServices
 					imagem={Cutilagem}

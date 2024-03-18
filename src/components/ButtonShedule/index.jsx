@@ -13,6 +13,7 @@ function Shedule() {
     return (
         <div>
             <Button
+                m={{base: "40px" , md: "20px"}}
                 color={"white"}
                 bgColor={"#d8b192"}
                 width={"180px"}
