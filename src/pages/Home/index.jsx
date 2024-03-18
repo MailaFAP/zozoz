@@ -6,6 +6,7 @@ import LogoZO from "../../assets/logoZO.png";
 import Sobre from "../Sobre";
 import Servicos from "../Servicos";
 import Contato from "../Contato";
+import WhatsApp from "../../components/whatsapp-link";
 
 function Home() {
 	const mainImageProps = {
@@ -55,8 +56,10 @@ function Home() {
 			<Sobre />
 			<Servicos />
 			<Contato />
+			<WhatsApp />
 		</div>
 	);
 }
+
 
 export default Home;
