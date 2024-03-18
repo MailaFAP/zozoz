@@ -6,7 +6,7 @@ import { Image } from "@chakra-ui/react"
 function WhatsApp() {
     return (
         <div>
-            <a href="https://api.whatsapp.com/send?phone=511974810911" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=511974810911" target="_blank" rel="noreferrer">
                 <a href="https://www.flaticon.com/br/icones-gratis/whatsapp"
                     title="whatsapp ícones">Whatsapp ícones criados por Fathema Khanom - Flaticon</a>
                 <Image src={LinkWhats} alt="WhatsApp"
@@ -16,27 +16,25 @@ function WhatsApp() {
                     right="20px"
                 />
             </a>
-
-
         </div>
     )
 }
 
-export default WhatsApp
+export default WhatsApp;
 
 
-<Flex
-				p="100px 100px 90px 300px"
-				flexDir={"row"}
-				gap={"100px"}
-				alignItems={"center"}
-			>
-				<Box>
-					<Table_services />
-				</Box>
-				<Box display={"flex"} justifyContent={"center"}>
-					<Image src={ImagemPrecos} h="270px" />
-				</Box>
+// <Flex
+// 				p="100px 100px 90px 300px"
+// 				flexDir={"row"}
+// 				gap={"100px"}
+// 				alignItems={"center"}
+// 			>
+// 				<Box>
+// 					<Table_services />
+// 				</Box>
+// 				<Box display={"flex"} justifyContent={"center"}>
+// 					<Image src={ImagemPrecos} h="270px" />
+// 				</Box>
 
-			</Flex>
-			<Shedule />
+// 			</Flex>
+// 			<Shedule />
