@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../components/Header";
 import {
 	Box,
-	Button,
 	Flex,
 	Image,
 	Text,
@@ -19,6 +18,7 @@ import salao01 from "../../assets/imagem-salao01.jpg";
 import salao02 from "../../assets/imagem-salao02.jpg";
 import salao03 from "../../assets/imagem-salao03.jpg";
 import Table_services from "../../components/Table";
+import Shedule from "../../components/ButtonShedule";
 
 function Servicos() {
 	const [isLargerThanMD] = useMediaQuery("(min-width: 768px)");
@@ -38,15 +38,7 @@ function Servicos() {
 				<Box display={"flex"} justifyContent={"center"}>
 					<Image src={ImagemPrecos} h="270px" />
 				</Box>
-				<Button
-					color={"white"}
-					bgColor={"#d8b192"}
-					width={"180px"}
-					height={"50px"}
-					borderRadius={"50px"}
-				>
-					Agendar
-				</Button>
+				<Shedule />
 			</Flex>
 			<Flex justifyContent={"center"} gap={"18px"} m={"100px 0"} color={"#767676"}>
 				<BoxServices
