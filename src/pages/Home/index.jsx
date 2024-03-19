@@ -12,7 +12,7 @@ function Home() {
 	const mainImageProps = {
 		src: Home01,
 		boxSize: "100%",
-		maxHeight: "100vh",
+		/*max*/height: "100vh",
 		alt: "mulher com a mão na frente do rosto",
 		objectFit: "cover",
 		filter: { base: "blur(3px)", md: "none" }

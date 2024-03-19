@@ -12,13 +12,13 @@ function Sobre() {
                 <Box
                     mt={{ base: "220px", md: "220px" }}
                     mb="20px"
-                    ml={{ md: "200px" }}
+                    ml={{ md: "150px" }} // redução de ml
                 >
                     <Image src={P02} h={{ base: "300px", md: "400px" }} top={{ base: "80px", md: "60px" }} left={{ md: "310px" }} position={"absolute"} zIndex={"-1"} />
                     <Image
                         name="Dani"
                         src={dani}
-                        boxSize={{ base: "200px", md: "300px" }}
+                        boxSize={{ base: "200px", md: "250px" }}
                         maxWidth={{ md: "400px" }}
                         maxHeight={{ md: "400px" }}
                         objectFit="cover"
@@ -26,11 +26,12 @@ function Sobre() {
                         boxShadow="0px 4px 6px rgba(23, 0, 22, 0.37)"
                     />
                 </Box>
-                <Text
+                <Box
                     textAlign={{ base: "center", md: "left" }}
                     mt={{ base: "13px", md: "160px" }}
-                    pl={{ base: "40px", md: "100px" }}
-                    pr={{ base: "40px", md: "100px" }}
+                    // remoção de padding para desktop
+                    pl={"40px"}
+                    pr={"40px"}
                 >
                     <Text fontSize={{ base: "x-large", md: "xx-large" }} textAlign={{ base: "left", md: "left" }} marginLeft={{ base: "13px", md: "45px" }} color="#d8b192" fontWeight="600"> MINHA HISTÓRIA... </Text>
                     <Text
@@ -45,7 +46,7 @@ function Sobre() {
                         Estou comprometida em oferecer serviços de alta qualidade, utilizando produtos de qualidade
                         para garantir resultados impecáveis...
                     </Text>
-                </Text>
+                </Box>
             </Flex>
         </div>
     )
