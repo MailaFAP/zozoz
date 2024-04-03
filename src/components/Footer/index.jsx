@@ -17,20 +17,21 @@ function Footer() {
 					<h2>Contato</h2>
 					<HStack>
 						<Circle size="30px" bg="white" color="#92d8b6">
-							<PhoneIcon />
+							 <a href="https://api.whatsapp.com/send?phone=5511974810911" target="_blank" rel="noreferrer"><PhoneIcon /></a>
 						</Circle>
 					</HStack>
-					<h4>(11)97421-0911</h4>
+					<h4>(011)97481-0911</h4>
 				</div>
 
 				<div className="localização-footer">
 					<h2>Localização</h2>
 					<h4>
+					<a href="https://maps.app.goo.gl/v17zcuiM36RxPFEt6" target="_blank">
 						Rua: Bernardino de Sena, 107
 						<br />
 						Casa Verde
 						<br />
-						São Paulo
+						São Paulo </a>
 					</h4>
 				</div>
 
@@ -51,7 +52,9 @@ function Footer() {
 					<hr />
 					<p>
 						Desenvolvido por : Amanda Araújo | Maila Ferreira | Myllena Miranda
-						Martins
+						Martins <br />
+						<a href="https://www.flaticon.com/br/icones-gratis/whatsapp"
+                    title="whatsapp ícones" className="dir-autorais">Whatsapp ícones criados por Fathema Khanom - Flaticon</a>
 					</p>
 				</div>
 			</footer>
