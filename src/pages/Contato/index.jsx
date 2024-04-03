@@ -6,9 +6,7 @@ import Manicure from "../../assets/unha.png";
 import Follow from "../../assets/follow.png";
 import "./Contato.css";
 import IconFollwow from "../../assets/social.jpg";
-// import Pontilhado from "../../assets/pontilhado01-contato.png";
-// import P02 from "../../assets/pontilhado02-contato.png";
-// import Traco from "../../assets/traco-contato.png";
+
 
 function Contato() {
 	return (
