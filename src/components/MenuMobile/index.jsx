@@ -12,17 +12,19 @@ function MenuMobile() {
                 boxSize={12}
                 onClick={() => setIsOpen(!isOpen)}
             />
-            <Box
-                p="2rem 8rem"
+            
+            <Box justifyContent={"start"}
+                p="2rem 5rem"
                 m="0 !important"
-                bgColor="#D8B192"
+                bgColor="rgba(0, 0, 0, 0.5)"
                 position="absolute"
                 top="100%"
                 left="0"
                 w="full"
                 display={isOpen ? "flex" : "none"}
+                
             >
-                <Menu direction="column" />
+                <Menu direction="column"/>
             </Box>
         </div>
     )

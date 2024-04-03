@@ -57,7 +57,7 @@ function Contato() {
 							<h3>
 								{" "}
 								Entre em contato e marque um horário <br />
-								(011)97481-0911
+								<a href="https://api.whatsapp.com/send?phone=5511974810911" target="_blank" rel="noreferrer">(011)97481-0911</a>
 							</h3>
 						</Box>
 					</Flex>
@@ -82,22 +82,15 @@ function Contato() {
 							<h2>LOCALIZAÇÃO</h2>
 							<h3>
 								{" "}
-								Rua Brenardino de Sena, 107 <br />
-								Casa Verde - SP
+								<a href="https://maps.app.goo.gl/v17zcuiM36RxPFEt6" target="_blank">Rua Brenardino de Sena, 107 <br />
+								Casa Verde - SP </a>
+								
 							</h3>
 						</Box>
 					</Flex>
 				</Flex>
 			</Flex>
-			{/* <Box className="pontilhado">
-				<Image src={Pontilhado} h={"400px"} zIndex={-1} />
-			</Box>
-			<Box className="pontilhado02">
-				<Image src={P02} h={"400px"} zIndex={-1} />
-			</Box>
-			<Box className="traco">
-				<Image src={Traco} h={"300px"} zIndex={-1} />
-			</Box> */}
+			
 			<Footer />
 		</div>
 	);
