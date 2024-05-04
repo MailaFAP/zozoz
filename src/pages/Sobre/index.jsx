@@ -8,9 +8,9 @@ function Sobre() {
     return (
         <div>
             <Header />
-            <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="center">
+            <Flex flexDirection={{ base: "column", md: "row" }} alignItems="center" justifyContent="center" backgroundColor="#e5faf0">
                 <Box
-                    mt={{ base: "220px", md: "220px" }}
+                    mt={{ base: "79px", md: "70px" }}
                     mb="20px"
                     ml={{ md: "150px" }} // redução de ml
                 >
@@ -18,12 +18,12 @@ function Sobre() {
                     <Image
                         name="Dani"
                         src={dani}
-                        boxSize={{ base: "200px", md: "250px" }}
+                        boxSize={{ base: "200px", md: "360px" }}
                         maxWidth={{ md: "400px" }}
                         maxHeight={{ md: "400px" }}
                         objectFit="cover"
                         borderRadius="full"
-                        boxShadow="0px 4px 6px rgba(23, 0, 22, 0.37)"
+                        boxShadow="0px 4px 20px rgba(23, 0, 22, 0.37)"
                     />
                 </Box>
                 <Box
@@ -32,19 +32,33 @@ function Sobre() {
                     // remoção de padding para desktop
                     pl={"40px"}
                     pr={"40px"}
+                    pb={"100px"}
                 >
-                    <Text fontSize={{ base: "x-large", md: "xx-large" }} textAlign={{ base: "left", md: "left" }} marginLeft={{ base: "13px", md: "45px" }} color="#d8b192" fontWeight="600"> MINHA HISTÓRIA... </Text>
                     <Text
-                        fontSize={{ base: "medium", md: "20px" }}
+                        fontSize={{ base: "x-large", md: "xx-large" }}
+                        textAlign={{ base: "center", md: "left" }}
+                        marginLeft={{ base: "13px", md: "45px" }}
+                        color="#d8b192" 
+                        mt={"40px"}
+                        fontWeight="600">
+                        MINHA HISTÓRIA...
+                    </Text>
+                    <Text
+                        fontSize={{ base: "medium", md: "18px" }}
                         textAlign={{ base: "left", md: "left" }}
-                        mt="13px"
+                        mt="30px"
                         pl={{ base: "15px", md: "45px" }}
                         pr={{ base: "15px", md: "40px" }}
                         color={"#767676"}
                     >
-                        Olá, sou a Dani, a mente criativa por trás deste espaço encantador.
-                        Estou comprometida em oferecer serviços de alta qualidade, utilizando produtos de qualidade
-                        para garantir resultados impecáveis...
+                        Há alguns anos, eu estava em um emprego com baixa remuneração quando a
+                        pandemia chegou, trazendo desafios para todos. Foi nesse período que descobri
+                        que estava grávida e precisei encontrar maneiras de melhorar minha situação
+                        financeira para cuidar da minha filha. Decidi, então, abrir um salão de manicure
+                        na minha garagem. Com determinação, consegui transformar o espaço em um local
+                        profissional, conquistando a confiança de várias clientes. Atualmente, consigo
+                        conciliar o trabalho com a maternidade, me sentindo realizada e otimista em
+                        relação ao futuro.
                     </Text>
                 </Box>
             </Flex>

@@ -1,5 +1,5 @@
 import React from "react";
-import Rotas from "./pages/Rotas/Rotas";
+import Rotas from "./pages/Rotas/rotas";
 
 function App() {
     return (

@@ -13,7 +13,7 @@ function Contato() {
 		<div className="contato-container">
 			<Header />
 			<Flex className="follow" justifyContent="center">
-				<Box position={"relative"} m="112px 0 0 0">
+				<Box position={"relative"} >
 					<Box w="100vw">
 						<AspectRatio maxW="100vw" ratio={90 / 30} h="400px">
 							<Image src={Follow} />
@@ -33,6 +33,7 @@ function Contato() {
 				alignItems="center"
 				height="60vh"
 				font-family="Montserrat', sans-serif"
+				backgroundColor={"#e5faf0"}
 			>
 				<Flex direction="column" align="center" gap="50px">
 					<Flex>
