@@ -8,7 +8,6 @@ import {
 	useMediaQuery,
 } from "@chakra-ui/react";
 import "./Servicos.css";
-import ImagemPrecos from "../../assets/img-precos.png";
 import Cutilagem from "../../assets/cutilagem.png";
 import Esmaltacao from "../../assets/esmaltacao.png";
 import Esmaltes from "../../assets/esmaltes.png";
@@ -19,6 +18,7 @@ import salao02 from "../../assets/imagem-salao02.jpg";
 import salao03 from "../../assets/imagem-salao03.jpg";
 import Table_services from "../../components/Table";
 import Shedule from "../../components/ButtonShedule";
+import Manicure from "../../assets/manicure.jpg"
 
 function Servicos() {
 	const [isLargerThanMD] = useMediaQuery("(min-width: 768px)");
@@ -27,25 +27,23 @@ function Servicos() {
 		<div>
 			<Header />
 			<Flex
-				p={{base: "112px 0 0 0" , md:"100px 100px 90px 300px"}}
-				flexDir={{base: "column", md: "row"}}
-				gap={{base: "50px", md: "100px"}}
+				p={{ base: "60px 0 10px 0", md: "80px 100px 20px 470px" }}
+				flexDir={{ base: "column", md: "row" }}
+				gap={{ base: "50px", md: "100px" }}
 				alignItems={"center"}
+				backgroundColor={"#e5faf0"}
 			>
-				<Box>
+				<Box >
 					<Table_services />
-				</Box>
-				<Box display={"flex"} justifyContent={"center"}>
-					<Image src={ImagemPrecos} h="270px" />
-				</Box>
-				
+					<Shedule />
+				</Box>						
 			</Flex>
-			<Shedule />
-			<Flex justifyContent={"center"} gap={"18px"} m={"100px 0"} color={"#767676"}>
+			
+			<Flex justifyContent={"center"} gap={"18px"} backgroundColor={"#e5faf0"} p={"50px"}>
 				<BoxServices
 					imagem={Cutilagem}
 					titulo="Cutilagem"
-					descricao="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+					descricao="Remove com precisão o excesso de cutículas, proporcionando uma aparência de unha limpa e bem cuidada."
 				/>
 				<BoxServices
 					imagem={Esmaltacao}
@@ -59,7 +57,7 @@ function Servicos() {
 				/>
 			</Flex>
 			{isLargerThanMD ? (
-				<Flex flexDir={"column"}>
+				<Flex flexDir={"column"} p={"80px 0"}backgroundColor={"#e5faf0"}>
 					<Text
 						fontSize={{ base: "x-large", md: "xx-large" }}
 						color={"#d8b192"}
@@ -92,18 +90,19 @@ function Servicos() {
 								alignItems={"center"}
 							>
 								<Image src={salao03} height={"190px"} />
-								<Image src={UnhasAmarelo} height={"190px"} />
+								<Image src={Manicure} height={"190px"} width={"140px"}/>
 							</Box>
 						</Box>
 					</Box>
 				</Flex>
 			) : (
-				<Flex flexDir={"column"}>
+				<Flex flexDir={"column"} backgroundColor={"#e5faf0"} p={"50px 0"}>
 					<Text
 						fontSize={{ base: "24px", md: "40px" }}
 						color={"#d8b192"}
 						fontWeight={"600"}
 						textAlign={"center"}
+						mb={"30px"}
 					>
 						PRODUTOS
 					</Text>
@@ -118,7 +117,7 @@ function Servicos() {
 						<Image src={salao02} height={"200px"} />
 						<Image src={salao03} height={"200px"} />
 						<Image src={UnhasAmarelo} height={"200px"} />
-						<Image src={UnhasAmarelo} height={"200px"} />
+						<Image src={Manicure} height={"200px"} />
 					</Box>
 				</Flex>
 			)}

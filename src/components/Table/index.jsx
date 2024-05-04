@@ -31,11 +31,7 @@ function Table_services() {
 					<Tr>
 						<Td className="td-precos" textAlign={"center"}>Spa dos pés</Td>
 						<Td className="td-precos" textAlign={"center"}>$20,00</Td>
-					</Tr>
-					<Tr className="tr-promocao">
-						<Td className="td-precos" textAlign={"center"}>Promoção</Td>
-						<Td className="td-precos" textAlign={"center"}>$30,00</Td>
-					</Tr>
+					</Tr>					
 				</Tbody>
 			</Table>
 		</div>
